@@ -1,0 +1,827 @@
+.main_bd {
+    background-image: url(./img/trident_tree.jpeg);
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    position: relative;
+}
+
+/* ------ animation */
+@keyframes Motion {
+    0% {
+        /* -webkit-transform: rotate(10deg); */
+        transform: rotate(-16deg);
+    }
+
+    50% {
+        /* -webkit-transform: rotate(-10deg); */
+        transform: rotate(20deg);
+    }
+
+    100% {
+        /* -webkit-transform: rotate(10deg); */
+        transform: rotate(-16deg);
+    }
+
+
+}
+
+.leafs_ {
+    animation-name: Motoin;
+
+    animation: Motion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: top center;
+    animation-direction: reverse;
+    position: absolute;
+
+    /* animation-delay: 25s; */
+    /* -webkit-animation-iteration-count: infinite; */
+    /* -webkit-transform-origin: top center; */
+}
+
+/* 1st st */
+.leaf_area1 {
+    position: absolute;
+    top: 190px;
+    left: 897px;
+    transform: rotate(43deg);
+}
+
+.leaf1_div_parent {
+    width: 22px;
+    height: 40px;
+    transform: rotate(-1deg);
+    transition: transform 1.5s
+}
+
+#hover_text1 {
+    opacity: 0;
+    left: -17px;
+    top: 60px;
+    z-index: -1;
+    text-align: justify;
+    transform: rotate(-43deg);
+    position: absolute;
+    padding: 6px;
+    background-color: white;
+    border-radius: 7px;
+    color: #949494;
+    text-transform: capitalize;
+    white-space: nowrap;
+    box-shadow: 0px 6px 44px 2px black;
+    transform-origin: 100% 0;
+    transition: all .4s ease;
+    width: 40px;
+}
+
+.leaf1_div_parent:hover+#hover_text1 {
+
+    cursor: pointer;
+    opacity: 1;
+    width: 123px;
+    position: absolute;
+    left: -84px;
+    top: -35px;
+    transform: rotate(-43deg);
+}
+
+/* 1st end */
+/* 2nd st */
+.leaf_area2 {
+    position: absolute;
+    top: 118px;
+    left: 282px;
+    transform: rotate(-210deg);
+}
+
+.leaf2_div_parent {
+    width: 22px;
+    height: 40px;
+    transform: rotate(-1deg);
+    transition: transform 1.5s
+}
+
+#hover_text2 {
+    opacity: 0;
+    left: 87px;
+    top: 167px;
+    z-index: -1;
+    text-align: justify;
+    transform: rotate(-151deg);
+    position: absolute;
+    padding: 6px;
+    background-color: white;
+    border-radius: 7px;
+    color: #949494;
+    text-transform: capitalize;
+    white-space: nowrap;
+    box-shadow: 0px 6px 44px 2px black;
+    transform-origin: 100% 0;
+    transition: all .4s ease;
+    width: 40px;
+}
+
+.leaf2_div_parent:hover+#hover_text2 {
+
+    cursor: pointer;
+    opacity: 1;
+    width: 210px;
+    position: absolute;
+    left: -231px;
+    top: 87px;
+    transform: rotate(-150deg);
+}
+
+/* 2nd end  */
+/* 3rd st */
+.leaf_area3 {
+    position: absolute;
+    top: 21px;
+    left: 350px;
+    transform: rotate(15deg);
+}
+
+.leaf3_div_parent {
+    width: 200px;
+    height: 100px;
+    transform: rotate(-1deg);
+    transition: transform 1.5s
+}
+
+#hover_text3 {
+    opacity: 0;
+    left: 56px;
+    top: 23px;
+    z-index: -1;
+    text-align: justify;
+    transform: rotate(-14deg);
+    position: absolute;
+    padding: 6px;
+    background-color: white;
+    border-radius: 7px;
+    color: #949494;
+    text-transform: capitalize;
+    white-space: nowrap;
+    box-shadow: 0px 6px 44px 2px black;
+    transform-origin: 100% 0;
+    transition: all .4s ease;
+    width: 40px;
+}
+
+.leaf3_div_parent:hover+#hover_text3 {
+
+    cursor: pointer;
+    opacity: 1;
+    width: 148px;
+    position: absolute;
+    left: 56px;
+    top: -4px;
+    transform: rotate(-15deg);
+}
+
+/* end 3rd */
+
+/* 4th st */
+.leaf_area4 {
+    position: absolute;
+    top: 6px;
+    left: 572px;
+    transform: rotate(-2deg);
+}
+
+.leaf4_div_parent {
+    width: 200px;
+    height: 75px;
+    transform: rotate(-1deg);
+    transition: transform 1.5s
+}
+
+#hover_text4 {
+    opacity: 0;
+    left: 130px;
+    top: 31px;
+    z-index: -1;
+    text-align: justify;
+    transform: rotate(1deg);
+    position: absolute;
+    padding: 6px;
+    background-color: white;
+    border-radius: 7px;
+    color: #949494;
+    text-transform: capitalize;
+    white-space: nowrap;
+    box-shadow: 0px 6px 44px 2px black;
+    transform-origin: 100% 0;
+    transition: all .4s ease;
+    width: 22px;
+}
+
+.leaf4_div_parent:hover+#hover_text4 {
+    cursor: pointer;
+    opacity: 1;
+    width: 230px;
+    position: absolute;
+    left: 127px;
+    top: 27px;
+    transform: rotate(2deg)
+}
+
+/* end 4th */
+/* 5th st */
+.leaf_area5 {
+    position: absolute;
+    top: 149px;
+    left: 587px;
+    transform: rotate(-16deg);
+}
+
+.leaf5_div_parent {
+    width: 200px;
+    height: 75px;
+    transform: rotate(20deg);
+    transition: transform 1.5s
+}
+
+#hover_text5 {
+    opacity: 0;
+    left: 47px;
+    top: 103px;
+    z-index: -1;
+    text-align: justify;
+    transform: rotate(16deg);
+    position: absolute;
+    padding: 6px;
+    background-color: white;
+    border-radius: 7px;
+    color: #949494;
+    text-transform: capitalize;
+    white-space: nowrap;
+    box-shadow: 0px 6px 44px 2px black;
+    transform-origin: 100% 0;
+    transition: all .4s ease;
+    width: 22px;
+}
+
+.leaf5_div_parent:hover+#hover_text5 {
+    cursor: pointer;
+    opacity: 1;
+    width: 230px;
+    position: absolute;
+    left: 11px;
+    top: 157px;
+}
+
+/* end 5th */
+/* 6th leafs */
+.leaf_area6 {
+    position: absolute;
+    top: 37px;
+    left: 896px;
+    transform: rotate(-20deg);
+}
+
+.leaf6_div_parent {
+    width: 200px;
+    height: 75px;
+    transform: rotate(20deg);
+    transition: transform 1.5s
+}
+
+#hover_text6 {
+    opacity: 0;
+    left: 36px;
+    top: -45px;
+    z-index: -1;
+    text-align: justify;
+    transform: rotate(20deg);
+    position: absolute;
+    padding: 6px;
+    background-color: white;
+    border-radius: 7px;
+    color: #949494;
+    text-transform: capitalize;
+    white-space: nowrap;
+    box-shadow: 0px 6px 44px 2px black;
+    transform-origin: 100% 0;
+    transition: all .4s ease;
+    width: 12px;
+}
+
+.leaf6_div_parent:hover+#hover_text6 {
+    cursor: pointer;
+    opacity: 1;
+    width: 230px;
+    position: absolute;
+    left: -16px;
+    top: 30px;
+}
+
+/* end 6th */
+/* 7th start */
+.leaf7_div_parent {
+    text-align: center;
+    width: 162px;
+    height: 75px;
+    transform: rotate(-1deg);
+    transition: transform 1.5s;
+}
+
+.leaf_area7 {
+    position: absolute;
+    top: 53px;
+    left: 1039px;
+    transform: rotate(1deg);
+}
+
+#hover_text7 {
+    opacity: 0;
+    left: 30px;
+    top: -10px;
+    z-index: -1;
+    text-align: justify;
+    transform: rotate(-1deg);
+    position: absolute;
+    padding: 6px;
+    background-color: white;
+    border-radius: 7px;
+    color: #949494;
+    text-transform: capitalize;
+    white-space: nowrap;
+    box-shadow: 0px 6px 44px 2px black;
+    transform-origin: 100% 0;
+    transition: all .4s ease;
+    width: 12px;
+}
+
+.leaf7_div_parent:hover+#hover_text7 {
+    cursor: pointer;
+    opacity: 1;
+    width: 192px;
+    position: absolute;
+    left: 10px;
+    top: 43px;
+}
+
+/*  end 7th */
+/* 8th st */
+.leaf_area8 {
+    position: absolute;
+    top: 151px;
+    left: 985px;
+    transform: rotate(26deg);
+}
+
+.leaf8_div_parent {
+    text-align: center;
+    width: 162px;
+    height: 75px;
+    transform: rotate(-1deg);
+    transition: transform 1.5s;
+}
+
+#hover_text8 {
+    opacity: 0;
+    left: 30px;
+    top: 136px;
+    z-index: -1;
+    text-align: justify;
+    transform: rotate(-25deg);
+    position: absolute;
+    padding: 6px;
+    background-color: white;
+    border-radius: 7px;
+    color: #949494;
+    text-transform: capitalize;
+    white-space: nowrap;
+    box-shadow: 0px 6px 44px 2px black;
+    transform-origin: 100% 0;
+    transition: all .4s ease;
+    width: 50px;
+}
+
+.leaf8_div_parent:hover+#hover_text8 {
+    cursor: pointer;
+    opacity: 1;
+    width: 248px;
+    position: absolute;
+    left: -23px;
+    top: 50px;
+}
+
+/*  end 8th */
+/* 9th */
+.leaf_area9 {
+    position: absolute;
+    top: 100px;
+    left: 701px;
+    transform: rotate(-4deg);
+}
+
+.leaf9_div_parent {
+    text-align: center;
+    width: 162px;
+    height: 75px;
+    transform: rotate(-1deg);
+    transition: transform 1.5s;
+}
+
+#hover_text9 {
+    opacity: 0;
+    left: 23px;
+    top: -7px;
+    z-index: -1;
+    text-align: justify;
+    transform: rotate(4deg);
+    position: absolute;
+    padding: 6px;
+    background-color: white;
+    border-radius: 7px;
+    color: #949494;
+    text-transform: capitalize;
+    white-space: nowrap;
+    box-shadow: 0px 6px 44px 2px black;
+    transform-origin: 100% 0;
+    transition: all .4s ease;
+    width: 50px;
+}
+
+.leaf9_div_parent:hover+#hover_text9 {
+    cursor: pointer;
+    opacity: 1;
+    width: 180px;
+    position: absolute;
+    left: -7px;
+    top: -5px;
+}
+
+/* 9th end */
+.jhulaa {
+    position: absolute;
+    top: 248px;
+    left: 851px;
+    transform: rotate(0deg);
+}
+
+/* -----End animation---- */
+.stories_text {
+    position: absolute;
+    display: block;
+    font-size: 22rem;
+    top: 119px;
+    left: 140px;
+    color: #7a7a7a;
+    line-height: 1.5;
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.we_are_about_text {
+    height: 178px;
+    width: 380px;
+    position: absolute;
+    top: 317px;
+    left: 746px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: justify;
+    color: #7a7a7a;
+    font-size: inherit;
+    font-weight: inherit;
+    vertical-align: baseline;
+}
+
+
+
+/* end */
+/* main content start */
+
+.we_are_part_text_main_div {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 18px;
+}
+
+.we_are_part_text {
+    height: 80px;
+    padding: 0px 28px 0px 0px;
+    text-align: justify;
+}
+
+.bold_text {
+    height: 36px;
+    color: #7a7a7a;
+    font-family: Barlow, sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -.2rem;
+    line-height: 3.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+.find_out_text {
+    height: 36px;
+    /* display: block; */
+    font-size: 33px;
+    font-weight: 100;
+    color: #7a7a7a;
+    letter-spacing: -2px;
+}
+
+.main_p_tag {
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.8rem;
+    padding: 0.6rem 1rem 0.7rem 2rem;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    font-stretch: narrower;
+}
+
+.main_p_tag p {
+    margin: 0;
+    font-stretch: extra-condensed;
+    height: 22px;
+}
+
+.explore_btn {
+    display: flex;
+    background: #3c3c3c;
+    height: 70px;
+    width: 260px;
+    justify-content: space-around;
+    border-radius: 0.8rem;
+    align-items: center;
+
+}
+
+.explore_btn:hover {
+    background-color: #2a8c6e
+}
+
+.arrow_div {
+    width: 50px;
+    transition: transform 1.0s;
+}
+
+.main_p_tag:hover+.arrow_div {
+    transform: scale(1.5);
+}
+
+/* ---- ---- ---- --- --- ---- ---- ---- ---- ---- ----    ----  ---- ------ ------ --------- ------- -  */
+.extra_super_main
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.super_super_main_home_texttiles_etc_div
+{
+    margin-bottom: 32px;
+
+}
+.main_home_texttiles_etc_div {
+    display: flex;
+    flex-direction: row;
+    height: 137px;
+    justify-content: center;
+}
+
+.fifth_block_div_child {
+    width: 227.8px;
+    animation-fill-mode: both;
+    animation-duration: 800ms;
+    animation-delay: 700ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: react-reveal;
+    margin-right: 23px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    text-align: justify;
+}
+
+@keyframes react-reveal {
+    0% {
+        opacity: 0;
+        transform: translate3d(0px, 5%, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.ist_home_textile_etc {
+    border: 0.1rem solid #cacaca;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    height: 100%;
+    padding: 2rem 1.4rem 1.6rem;
+}
+
+.ist_home_textile_etc:hover {
+    color: #1a7361;
+    /* font-weight: 700; */
+    border-color: #f9b513;
+}
+
+.title_h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.title_p {
+    font-size: 13px;
+    /* font-weight: 300; */
+    /* line-height: inherit; */
+    font-family: Barlow, sans-serif;
+    /* letter-spacing: 1px; */
+    color: #8d8d8d;
+}
+
+/* 2nd  */
+.iind_home_textile_etc {
+    border: 0.1rem solid #cacaca;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    height: 100%;
+    padding: 2rem 1.4rem 1.6rem;
+}
+
+.iind_home_textile_etc:hover {
+    color: #1a7361;
+    /* font-weight: 700; */
+    border-color: #f9b513;
+}
+
+/* 3rd */
+.iiird_home_textile_etc {
+    border: 0.1rem solid #cacaca;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    height: 100%;
+    padding: 2rem 1.4rem 1.6rem;
+}
+
+.iiird_home_textile_etc:hover {
+    color: #1a7361;
+    /* font-weight: 700; */
+    border-color: #f9b513;
+}
+
+/* 4th */
+.ivth_home_textile_etc {
+    border: 0.1rem solid #cacaca;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    height: 100%;
+    padding: 2rem 1.4rem 1.6rem;
+}
+
+.ivth_home_textile_etc:hover {
+    color: #1a7361;
+    /* font-weight: 700; */
+    border-color: #f9b513;
+}
+
+/* 5th */
+.vth_home_textile_etc {
+    border: 0.1rem solid #cacaca;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    height: 100%;
+    padding: 2rem 1.4rem 1.6rem;
+}
+
+.vth_home_textile_etc:hover {
+    color: #1a7361;
+    /* font-weight: 700; */
+    border-color: #f9b513;
+}
+/* press ctrl+k and ctrl+F align all code */
+/* images section and bed Etc */
+.bed_etc_img_div
+{
+    border-radius: 0.8rem;
+    color: #fff;
+    /* height: 40rem; */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 491px;
+}
+.images_bed_etc{
+    opacity: 1;
+    height: 400px;
+    width: 1231px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 9px;
+    position: absolute;
+    left: 10px;
+}
+/*  images ke ane ka animation */
+.bed_paper_yarn_super_main_div {
+    /* width: 227.8px; */
+    animation-fill-mode: both;
+    animation-duration: 800ms;
+    animation-delay: 700ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: aane_ka_animation;
+    margin-right: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+
+@keyframes aane_ka_animation {
+    0% {
+        opacity: 0;
+        transform: translate3d(0px, 5%, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+.h_text_p_text
+{
+        top: -47px;
+        position: absolute;
+        left: 71px;
+        display: flex;
+        flex-direction: column;
+        height: 290px;
+        justify-content:space-between ;
+
+}
+.text_bed_or_etc_text {
+
+    font-family: "Licorice", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12rem;
+    line-height: 1.7;
+    color: white;
+    height: 215px;
+
+}
+.text_bed_etc_p_text
+{
+    color: white;
+    font-weight: 700;
+    font-size: 19px;
+}
+.explore_area
+{
+    display: flex;
+    align-items: center;
+    width: 164px;
+    height: 38px;
+    justify-content: space-evenly;
+    border: 0.2rem dotted #7a7a7a;
+    border-radius: 0.4rem;
+    border-color:white;
+    color: #fff;
+    position: absolute;
+    top: 270px;
+    left: 72px;
+    /* font-weight: 300; */
+}
+.explore_area:hover
+{
+    border: 0.2rem solid white;
+}
+.text_explore_1
+{
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+
+/* 
+<div className="super_super_main_home_texttiles_etc_div">
+<div className="super_main_home_texttiles_etc_div">
+  <div className="main_home_texttiles_etc_div">
+    <div className="fifth_block_div_child" key={id}>
+      <div className="ist_home_textile_etc">
+        <h3 className='title_h3'>{text}</h3>
+        <p className="title_p">
+          Discover the best bed and bath experience
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+) */

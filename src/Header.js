@@ -5,6 +5,7 @@ import { Icon } from '@iconify/react';
 
 function NavBar() {
   return (
+    <div className="super_main_header">
 <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,22 +41,22 @@ function NavBar() {
 
 
 {/* drop dwon */}
-<div class="dropdown " id=''><span className='india_text'>English</span>
-  <button class="btn btn-secondary dropdown-toggle" type="button" id='dropdown_section' data-bs-toggle="dropdown" aria-expanded="false">
+<div className="dropdown " id=''><span className='india_text'>English</span>
+  <button className="btn btn-secondary dropdown-toggle" type="button" id='dropdown_section' data-bs-toggle="dropdown" aria-expanded="false">
   
   </button>
-  <ul class="dropdown-menu" id='dropdown_ul'>
-    <li><button class="dropdown-item" type="button"><span>English</span> </button></li>
-    <li><button class="dropdown-item" type="button"><span>Arabic</span></button></li>
-    <li><button class="dropdown-item" type="button"><span>German</span></button></li>
-    <li><button class="dropdown-item" type="button"><span>French</span></button></li>
-    <li><button class="dropdown-item" type="button"><span>Chines</span></button></li>
-    <li><button class="dropdown-item" type="button"><span>Italian</span></button></li>
-    <li><button class="dropdown-item" type="button"><span>Russian</span></button></li>
-    <li><button class="dropdown-item" type="button"><span>Sri-lankan</span></button></li>
-    <li><button class="dropdown-item" type="button"><span>Japanese</span></button></li>
-    <li><button class="dropdown-item" type="button"><span>Spanish</span></button></li>
-    <li><button class="dropdown-item" type="button"><span>Postuguese</span></button></li>
+  <ul className="dropdown-menu" id='dropdown_ul'>
+    <li><button className="dropdown-item" type="button"><span>English</span> </button></li>
+    <li><button className="dropdown-item" type="button"><span>Arabic</span></button></li>
+    <li><button className="dropdown-item" type="button"><span>German</span></button></li>
+    <li><button className="dropdown-item" type="button"><span>French</span></button></li>
+    <li><button className="dropdown-item" type="button"><span>Chines</span></button></li>
+    <li><button className="dropdown-item" type="button"><span>Italian</span></button></li>
+    <li><button className="dropdown-item" type="button"><span>Russian</span></button></li>
+    <li><button className="dropdown-item" type="button"><span>Sri-lankan</span></button></li>
+    <li><button className="dropdown-item" type="button"><span>Japanese</span></button></li>
+    <li><button className="dropdown-item" type="button"><span>Spanish</span></button></li>
+    <li><button className="dropdown-item" type="button"><span>Postuguese</span></button></li>
 
   </ul>
 </div>
@@ -64,6 +65,7 @@ function NavBar() {
     </div>
   </div>
 </nav>
+</div>
   )
   }
 
