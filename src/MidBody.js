@@ -3,49 +3,52 @@ import "./MidBody.css";
 import leaf from "./img/trident_leaf.webp";
 import Jhulaa from "./img/jhulaa.png";
 import { Icon } from '@iconify/react';
-// import Bed from "./img/bed.jpeg";
+import bedImg from "./img/bed.jpeg";
+import paperImg from "./img/Paper.jpeg";
+import yarnImg from "./img/yarn.jpeg";
+import chemicalImg from "./img/Chemical.jpeg";
+import energyImg from "./img/Energy.jpeg";
 // import { Link } from 'react-router-dom';
 // import { useState } from 'react';
 function MidBody() {
   // C:\Users\Dell\Desktop\trident_clone\trident_web\src\img\bed.jpeg
-const DataImage=[
-
-  {
-    id:1,
-    text:"Home Textiles",
-    img:"/img/bed.jpeg",
-    text_i:"bed",
-    text_ii:"Browse our latest contemporary designs for your home"
-  },
-  {
-    id:2,
-    text:"Paper & Stationery ",
-    img:"./img/Paper.jpeg",
-    text_i:"paper",
-  },
-   {
-    id:3,
-    text:"Yarn",
-    img:"./img/yarn.jpeg",
-    text_i:"yarn",
-
-  },
-  {
-    id:4,
-    text:"Chemicals",
-    img:"./img/Chemical.jpeg",
-    text_i:"chemical",
-
-  },
-  {
-    id:5,
-    text:"Energy",
-    img:"./img/Energy.jpeg",
-    text_i:"energy",
-
-  },
-]
-
+  const DataImage = [
+    {
+      id: 1,
+      text: "Home Textiles",
+      img: bedImg,
+      text_i: "bed",
+      text_ii: "Browse our latest contemporary designs for your home"
+    },
+    {
+      id: 2,
+      text: "Paper & Stationery",
+      img: paperImg,
+      text_i: "paper",
+      text_ii: "Discover our collection of fine paper and stationery"
+    },
+    {
+      id: 3,
+      text: "Yarn",
+      img: yarnImg,
+      text_i: "yarn",
+      text_ii: "Explore our range of premium yarn products"
+    },
+    {
+      id: 4,
+      text: "Chemicals",
+      img: chemicalImg,
+      text_i: "chemical",
+      text_ii: "Learn more about our chemical products and services"
+    },
+    {
+      id: 5,
+      text: "Energy",
+      img: energyImg,
+      text_i: "energy",
+      text_ii: "Discover sustainable energy solutions for your business"
+    },
+  ];
 
 
   return (
@@ -166,7 +169,7 @@ and yran chemicals Energy and change the photo  by using hooks use state */}
       <div className="super_super_main_home_texttiles_etc_div">
         <div className="super_main_home_texttiles_etc_div">
           <div className="main_home_texttiles_etc_div">
-            <div className="fifth_block_div_child" key={id}>
+            <div className="fifth_block_div_child" key={DataImage.id}>
               <div className="ist_home_textile_etc">
                 <h3 className='title_h3'>{text}</h3>
                 <p className="title_p">
@@ -183,28 +186,25 @@ and yran chemicals Energy and change the photo  by using hooks use state */}
 </div>
       {/*  this section creste a images and this area we are using UseState hooks */}
       {
-         DataImage.map((break_data)=>
-        {
-          const{img,text_i,}=break_data;
-          const{text_ii}=break_data;
-          return(
-            <div className="bed_paper_yarn_super_main_div" >
-            <div className="bed_etc_img_div">
-            <img src={img} className='images_bed_etc' alt="images_bed etc" />
-            </div>
-            <div className="h_text_p_text">
-            <h2 className='text_bed_or_etc_text'>{text_i}</h2>
-            <p className="text_bed_etc_p_text">{text_ii}</p>
-            </div>
-            {/* <div className="explore_text_main_div"> */}
-              <div className="explore_area">
-                <h2 className='text_explore_1'> 
-                  EXPLORE
-                </h2>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24"><path fill="white" d="m20 12l.707-.707l.707.707l-.707.707zM5 13a1 1 0 1 1 0-2zm9.707-7.707l6 6l-1.414 1.414l-6-6zm6 7.414l-6 6l-1.414-1.414l6-6zM20 13H5v-2h15z"/></svg>
+         DataImage.map((break_data) => {
+          const { id, text, img, text_i, text_ii } = break_data;
+          return (
+            <div className="bed_paper_yarn_super_main_div" key={id}>
+              <div className="bed_etc_img_div">
+                <img src={typeof img === 'string' ? img : img.default} className='images_bed_etc' alt="images_bed etc" />
               </div>
-            {/* </div> */}
-          </div>
+              <div className="h_text_p_text">
+                <h2 className='text_bed_or_etc_text'>{text_i}</h2>
+                <p className="text_bed_etc_p_text">{text_ii}</p>
+              </div>
+              <div className="explore_area">
+                <h2 className='text_explore_1'>EXPLORE</h2>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                  <path fill="white" d="m20 12l.707-.707l.707.707l-.707.707zM5 13a1 1 0 1 1 0-2zm9.707-7.707l6 6l-1.414 1.414l-6-6zm6 7.414l-6 6l-1.414-1.414l6-6zM20 13H5v-2h15z"/>
+                </svg>
+              </div>
+            </div>
+          
           )
         })
       }
